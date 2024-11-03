@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAKNAAM</title>
+   
+</head>
+    <style>
+
+        /* 페이지 전체 중앙 정렬 */
+        body {
+       
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+
+        .login-container {
+            color: #7466CE;
+            font-size: 12px;
+            text-align: center;
+            padding: 20px;
+            
+        }
+        .input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+         /* input 필드 크기 조정 */
+         input[type="text"], input[type="password"] {
+            padding: 15px; /* 내부 여백 */
+            width: 250px; /* 너비 */
+            height: 15px; /* 높이 */
+            font-size: 0.9em; /* 글씨 크기 */
+            text-align: left;
+            border: 1px solid #ccc;
+            border-radius: 5px; /* 모서리 둥글게 */
+        }
+
+        .id, .password {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            padding: 15px;
+        }
+       
+        .id h6, .password h6 {
+
+            font-size: 15px;
+            color: #595959;
+            margin: 0;
+        }
+
+        .login-button {
+            text-align: center;
+        }
+
+
+    </style>
+<body>
+    
+    <div class="login-container">
+        <h1>로그인</h1>
+    </div>
+
+    <div class="input">
+    <div class="id">
+        <h6>아이디</h6>
+        <input type="text" placeholder="아이디를 입력하세요.">
+    </div>
+
+    <div class="password">
+        <h6>비밀번호</h6>
+        <input type="password" placeholder="비밀번호를 입력하세요.">
+    </div>
+</div>
+
+    <div class="login-button">
+        <a href="home.html"><img src="img/login.png" alt=""></a>
+    </div>
+</body>
+</html>

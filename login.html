@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,20 +21,23 @@
         background-color: white;
         z-index: 10;
     }
+
     .main-content {
         display: flex;
-        flex-direction: column; /* 수직 방향으로 정렬 */
+        flex-direction: column;
+        /* 수직 방향으로 정렬 */
         justify-content: center;
         align-items: center;
-        height: 100vh; /* 화면 전체 높이 차지 */
-        width: 100vw; /* 화면 전체 너비 차지 */
+        height: 100vh;
+        /* 화면 전체 높이 차지 */
+        width: 100vw;
+        /* 화면 전체 너비 차지 */
         position: absolute;
         top: 0;
         left: 0;
     }
-
-
 </style>
+
 <body>
     <div class="image-container" id="imageContainer">
         <img src="img/logo.png" alt="logo">
@@ -48,9 +52,9 @@
             <img src="img/login2.png" alt="">
         </div>
     </div>
-    
+
     <script>
-        window.onload = function() {
+        window.onload = function () {
             const imageContainer = document.getElementById('imageContainer');
             const mainContent = document.getElementById('mainContent');
 
@@ -62,4 +66,5 @@
         };
     </script>
 </body>
+
 </html>

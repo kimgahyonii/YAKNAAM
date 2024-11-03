@@ -1,5 +1,5 @@
 
-window.onload = function() {
+window.onload = function () {
     const imageContainer = document.getElementById('imageContainer');
     const mainContent = document.getElementById('mainContent');
 

@@ -1,24 +1,27 @@
-@media screen and (max-width: 390px) and (max-height: 844px) {
-    .image-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; /* 화면 전체 높이 차지 */
-        width: 100vw; /* 화면 전체 너비 차지 */
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: white; /* 배경색 (원하시는 색으로 조정 가능) */
-        z-index: 10; /* main-content 위에 표시되도록 */
-    }
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 화면 전체 높이 차지 */
+    width: 100vw;
+    /* 화면 전체 너비 차지 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    /* 배경색 (원하시는 색으로 조정 가능) */
+    z-index: 10;
+    /* main-content 위에 표시되도록 */
+}
 
-    .image-container img {
-        max-width: 80%; /* 이미지 크기 조정 */
-        height: auto;
-    }
+.image-container img {
+    max-width: 80%;
+    /* 이미지 크기 조정 */
+    height: auto;
+}
 
-    /* main-content 기본 숨김 설정 */
-    .main-content {
-        display: none;
-    }
+/* main-content 기본 숨김 설정 */
+.main-content {
+    display: none;
 }

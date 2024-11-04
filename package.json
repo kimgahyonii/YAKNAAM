@@ -1,0 +1,14 @@
+{
+  "name": "yaknaam",
+  "version": "1.0.0",
+  "description": "2024 미림 소프트웨어 챌린지",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo 'No build step specified' && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

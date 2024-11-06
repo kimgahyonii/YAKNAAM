@@ -1,0 +1,107 @@
+   /* Reset */
+   body, h2, h3, h4, h5, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+
+body {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20% 0px 40px 0px;
+  }
+
+  /* Header */
+  .header {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  /* Header 텍스트 크기 조정 */
+.header h2 {
+    font-size: 2rem; /* 원하는 크기로 조정 가능 */
+    font-weight: bold;  
+  }
+  
+  .header .profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    float: right;
+  }
+  /* Medication list */
+  .medication-list {
+    margin-bottom: 15px;
+  }
+  .medication-list h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .medication-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .medication-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  .medication-item span {
+    flex: 1;
+  }
+  /* Tips section */
+  .tips {
+    margin-bottom: 15px;
+  }
+  .tips h3,h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .tips-category {
+    margin-bottom: 15px;
+  }
+  .tips-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .tips-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  /* 약 정보와 팁 항목 간격 조정 */
+    .medication-item,
+    .tips-item {
+    margin-bottom: 10px; /* 더 촘촘하게 배치 */
+    }
+
+
+  /* Add button 스타일 */
+/* + 버튼 주변 간격 추가 */
+.add-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40%; /* 위쪽 요소와 간격 */
+    margin-bottom: 40%; /* 아래쪽 요소와 간격 */
+  }
+  
+  .add-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: #828282;
+    background-color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  

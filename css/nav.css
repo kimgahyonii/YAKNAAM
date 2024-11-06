@@ -1,0 +1,22 @@
+/* Navbar */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    border-top: none;
+  }
+  .navbar .nav-link {
+    color: lightgray;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .navbar .nav-link.active {
+    color: #7466CE;
+  }
+  .navbar .nav-link i {
+    font-size: 2rem;
+  }

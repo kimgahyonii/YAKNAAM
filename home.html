@@ -64,18 +64,7 @@
     </div>
   </div>
 
-
-
- <!-- JavaScript로 nav.html 로드 -->
  <script>
-   // nav.html 파일을 불러와서 #navbar 요소에 삽입
-   fetch('nav.html')
-     .then(response => response.text())
-     .then(data => {
-       document.getElementById('navbar').innerHTML = data;
-     })
-     .catch(error => console.error('Error loading navigation:', error));
-
 
     // 데이터베이스에서 사용자 이름 불러오기 예시
     function loadUsername() {

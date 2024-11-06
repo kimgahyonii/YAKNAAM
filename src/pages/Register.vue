@@ -43,6 +43,12 @@ export default {
                     background_image_url: '/profile.jpeg',
                     created_at: Date.now(),
                 });
+                console.log('회원가입 성공 DB에 저장된 사용자 정보',{
+                    uid: user.uid,
+                    email: email.value,
+                    username: username.value,
+                });
+                
                 // 저장 성공
                 alert('회원가입을 성공하였습니다. 로그인 해주세요.');
             } catch (err) {

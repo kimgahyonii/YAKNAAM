@@ -1,0 +1,190 @@
+/* 기본 설정 */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 110vh; /* 전체 화면 높이 설정 */
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 컨테이너를 화면 중앙으로 수직 정렬 */
+    align-items: center;
+}
+body{
+font-family: "Noto Sans KR", serif !important;
+}
+
+h1.main-title {
+    padding: 0px 0px 0px 20px;
+    font-size: 25px !important; /* 원하는 크기로 조정 */
+    font-weight: bold;
+}
+/* h1 스타일 */
+h1 {
+    margin: 10px 0; /* 상하 간격 */
+    font-size: 20px !important; 
+    color: #333;
+    text-align: left;
+    width: 100%;
+    padding-left: 10px;
+}
+
+/* 메인 컨테이너 스타일 */
+/* 메인 컨테이너 스타일 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 내부 요소들을 왼쪽 정렬 */
+    width: 90%; /* 90%의 넓이로 설정 */
+    max-width: none; /* 최대 넓이를 제한하지 않음 */
+    background-color: white; /* 흰색 배경 */
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* 그림자 속성 */
+    margin-top: 30px; /* h1과의 간격 */
+    gap: 20px; 
+}
+/* 복용약 선택 영역 스타일 */
+.medicine-selection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.medicine-selection label {
+    font-size: 14px;
+    color: #555;
+    margin-right: 10px;
+}
+.medicine-selection input {
+    width: 300px;
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.select-button {
+    background-color: #bfa2ff;
+    color: white;
+    padding: 8px 12px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 아이콘 선택 안내 텍스트 */
+.icon-instruction {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* 아이콘 선택 영역 스타일 */
+.icon-selection {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+.circle-icon { background-color: #f5a623; }
+.star-icon { background-color: #f8e71c; }
+.heart-icon { background-color: #ff4d5a; }
+.smile-icon { background-color: #50e3c2; }
+.moon-icon { background-color: #4a90e2; }
+.check-icon { background-color: #d1d8e0; }
+
+/* 알람 시간 설정 영역 스타일 */
+.time-setting {
+    margin-bottom: 20px;
+}
+.time-setting label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+.time-input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.time-input input {
+    width: 40px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.time-input select {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* 알람 날짜 설정 버튼 스타일 */
+.date-setting {
+    margin-bottom: 20px;
+}
+.date-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+.date-button.active {
+    background-color: #bfa2ff;
+    color: white;
+}
+.day-selection {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+.day {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+}
+/* 알림할 날짜 안내 텍스트 스타일 */
+.date-instruction {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+/* 추가하기 버튼 스타일 */
+.add-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #bfa2ff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.day.selected {
+    background-color: #7466CE;
+    color: white;
+}

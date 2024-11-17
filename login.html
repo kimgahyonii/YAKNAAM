@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YAKNAAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Dongle&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nuosu+SIL&family=Plaster&display=swap"
+        rel="stylesheet">
    
 </head>
     <style>
@@ -18,8 +23,12 @@
             margin: 0;
             flex-direction: column;
         }
-
-
+        .noto-sans-kr-uniquifier {
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }:focus-visible
+        
         .login-container {
             color: #7466CE;
             font-size: 12px;
@@ -33,8 +42,8 @@
             align-items: center;
             margin-bottom: 30px;
         }
-         /* input 필드 크기 조정 */
-         input[type="text"], input[type="password"] {
+        /* input 필드 크기 조정 */
+        input[type="text"], input[type="password"] {
             padding: 15px; /* 내부 여백 */
             width: 250px; /* 너비 */
             height: 15px; /* 높이 */
@@ -43,16 +52,17 @@
             border: 1px solid #ccc;
             border-radius: 5px; /* 모서리 둥글게 */
         }
-
+        
         .id, .password {
             display: flex;
             flex-direction: column;
             align-items: baseline;
             padding: 15px;
         }
-       
+        
         .id h6, .password h6 {
-
+            
+            font-family: "Noto Sans KR", serif;
             font-size: 15px;
             color: #595959;
             margin: 0;
@@ -60,6 +70,11 @@
 
         .login-button {
             text-align: center;
+        }
+
+        .login-container h1{
+            font-size: 25px;
+            color: #7466CE;
         }
 
 

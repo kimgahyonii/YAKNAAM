@@ -5,10 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YAKNAAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Dongle&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nuosu+SIL&family=Plaster&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/alarm plus.css">
+    <link rel="stylesheet" href="http://apis.data.go.kr/1471000/MdcinGrnIdntfcInfoService01/getMdcinGrnIdntfcInfoList01?serviceKey=${apiKey}&numOfRows=10&pageNo=1">
+
 </head>
 
 <body>
@@ -20,7 +28,7 @@
                 <i class="bi bi-alarm" style="font-size: 2rem; color: lightgray;"></i>
                 <div style="color: lightgray; font-size: 0.9rem;">알람 수정</div>
             </a>
-            <a href="home.html" class="nav-link text-center">
+            <a href="alarm plus.html" class="nav-link text-center">
                 <i class="bi bi-house-door" style="font-size: 2rem; color: #7466CE;"></i>
                 <div style="color: #7466CE; font-size: 0.9rem;">홈</div>
             </a>
@@ -34,40 +42,35 @@
 
     <!-- 사용자 이름을 표시할 자리 -->
     <div class="header">
-        <h2>안녕하세요 <br><span id="username"></span>님 ;)</h2>
+        <h2>안녕하세요 <br><span id="username">김가현</span>님 ;)</h2>
     </div>
 
     <!-- 오늘 먹을 약 리스트 -->
-    <div class="medication-list">
-        <h3>오늘 먹을 약</h3>
-        <ul id="medication-schedule">
-            <!-- 약 목록이 여기에 추가될 예정 -->
-        </ul>
+    <div class="alarm-info" id="alarm-list">
+        <img id="icon-display" src="img/default.png" alt="아이콘" width="40">
+        <p id="medicine-display">정보 없음</p>
+        <p id="time-display">정보 없음</p>
     </div>
+    
 
     <!-- 추가 버튼 -->
     <div class="add-button">
-        <a href="add_medication.html" class="add-link">+</a>
+        <a href="home(+).html" class="add-link">+</a>
     </div>
     </div>
     <!-- Tips 섹션 -->
     <div class="tips">
         <h4>Tip</h4>
-        <div>
-            <h3>먹을 때 주의해요</h3>
-            <ul id="caution-list">
-                <!-- API로 가져올 데이터 -->
-            </ul>
-        </div>
-        <div>
-            <h3>같이 먹으면 좋아요</h3>
-            <ul id="good-combo-list">
-                <!-- API로 가져올 데이터 -->
-            </ul>
+        <div class="tip-content">
+            <h3>같이 복용하면 안되는 약을 알아보세요!</h3>
+            <div class="tip-link">
+                <img src="img/링크.png" alt="링크 아이콘" width="24" height="24">
+                <a href="https://www.hira.or.kr/main.do">건강보험심사평가원</a>
+            </div>
         </div>
     </div>
 
-    <script>
+    <!-- <script>
 
         // 데이터베이스에서 사용자 이름 불러오기 예시
         function loadUsername() {
@@ -100,7 +103,24 @@
         // 페이지 로드시 함수 실행
         loadUsername();
         loadMedicationTips();
-    </script>
+
+    function loadAlarmData() {
+        // 로컬 스토리지에서 데이터 가져오기
+        const alarmData = JSON.parse(localStorage.getItem("alarmData"));
+
+        if (alarmData) {
+            document.getElementById("medicine-display").textContent = alarmData.medicine || "약 정보 없음";
+            document.getElementById("icon-display").src = `img/${alarmData.icon}.png`;
+            document.getElementById("time-display").textContent = alarmData.time || "시간 정보 없음";
+            document.getElementById("days-display").textContent = alarmData.days.join(", ") || "요일 정보 없음";
+        }
+    }
+
+    // 페이지 로드 시 데이터 불러오기
+    document.addEventListener("DOMContentLoaded", loadAlarmData);
+
+    </script> -->
+    <script src="js/alarm plus.js"></script>
 </body>
 
 </html>

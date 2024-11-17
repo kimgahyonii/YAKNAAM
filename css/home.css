@@ -87,8 +87,8 @@ body {
 .add-button {
     display: flex;
     justify-content: center;
-    margin-top: 40%; /* 위쪽 요소와 간격 */
-    margin-bottom: 40%; /* 아래쪽 요소와 간격 */
+    margin-top: 10%; /* 위쪽 요소와 간격 */
+    margin-bottom: 20%; /* 아래쪽 요소와 간격 */
   }
   
   .add-link {

@@ -11,6 +11,7 @@ body, html {
 }
 body{
 font-family: "Noto Sans KR", serif !important;
+
 }
 
 h1.main-title {
@@ -62,6 +63,9 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+.medicine-selection img{
+    margin-right: 10px;
+}
 .select-button {
     background-color: #bfa2ff;
     color: white;
@@ -91,12 +95,11 @@ h1 {
     border-radius: 50%;
     background-color: #ddd;
 }
-.circle-icon { background-color: #f5a623; }
-.star-icon { background-color: #f8e71c; }
-.heart-icon { background-color: #ff4d5a; }
-.smile-icon { background-color: #50e3c2; }
-.moon-icon { background-color: #4a90e2; }
-.check-icon { background-color: #d1d8e0; }
+
+.add-button a{
+    color: #f5f5f5;
+    text-decoration: none;
+}
 
 /* 알람 시간 설정 영역 스타일 */
 .time-setting {
@@ -104,7 +107,7 @@ h1 {
 }
 .time-setting label {
     font-size: 14px;
-    color: #555;
+    color: #333;
     display: block;
     margin-bottom: 5px;
 }
@@ -114,16 +117,17 @@ h1 {
     gap: 5px;
 }
 .time-input input {
-    width: 40px;
+    width: 100px;
     padding: 5px;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 5px;
 }
 .time-input select {
+    width: 100px;
     padding: 5px;
-    font-size: 14px;
+    font-size: 18px;
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: white;
@@ -178,7 +182,7 @@ h1 {
     padding: 12px;
     font-size: 16px;
     color: white;
-    background-color: #bfa2ff;
+    background-color: #7466CE;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -187,4 +191,67 @@ h1 {
 .day.selected {
     background-color: #7466CE;
     color: white;
+}
+
+/* 유진 코드 */
+.date-setting {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
+}
+
+.date-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.date-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    color: white;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+.date-button:hover {
+    background-color: #7466CE;
+}
+
+/* .date-button.active {
+    background-color: #7466CE;
+    color: white;
+    border-color: #7466CE;
+} */
+
+.day-selection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #D9D9D9; 
+    border-radius: 25px;
+    width: 357px;
+    height: 42.56px;
+}
+
+.day {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+} 
+
+.day.selected {
+    background-color: #7466CE;
+    color: white;
+    border-color: #7466CE;
 }

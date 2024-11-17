@@ -1,0 +1,90 @@
+body{
+    font-family: "Noto Sans KR", serif !important;
+    
+}
+
+.noto-sans-kr-uniquifier {
+        font-family: "Noto Sans KR", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+}
+/* 삭제 버튼 스타일 */
+.alarm-info button {
+    margin-left: auto; /* 버튼을 오른쪽 끝으로 이동 */
+    background-color: white; /* 버튼 배경색 */
+    color: #333; /* 버튼 텍스트 색상 */
+    border: none; /* 테두리 제거 */
+    padding: 5px 10px; /* 내부 여백 */
+    cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+    border-radius: 4px; /* 모서리를 둥글게 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 박스 쉐도우 추가 */
+    font-size: 14px; /* 글꼴 크기 */
+}
+
+/* 마우스 호버 시 스타일 */
+.alarm-info button:hover {
+    background-color: #e60000; /* 호버 시 배경색 변경 */
+}
+
+
+
+#alarm-list {
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 아이템 배치 */
+    margin-top: 20px;
+}
+
+.alarm-info {
+    padding: 10px;
+    font-family: "Noto Sans KR", serif !important;
+    display: flex;
+    align-items: center; /* 세로 정렬을 가운데로 */
+    gap: 10px; /* 요소 간 간격 */
+}
+
+.alarm-info img {
+    flex-shrink: 0; /* 이미지는 크기를 줄이지 않음 */
+}
+
+.alarm-info p {
+    color: rgb(98, 97, 97);
+    font-family: "Noto Sans KR", serif !important;
+    margin: 0; /* 기본 여백 제거 */
+    font-size: 18px; /* 텍스트 크기 조정 */
+}
+
+.tips h3{
+    font-size: 18px;
+}
+
+/* .tips a{    
+    color: #333;
+    text-decoration: none;
+} */
+
+/* 기존 CSS 파일에 추가하거나, <style> 태그 내에 추가 */
+
+.tip-content {
+    margin-top: 20px;
+}
+
+.tip-link {
+    display: flex;
+    align-items: center; /* 수직 가운데 정렬 */
+    gap: 10px; /* 이미지와 링크 사이 간격 */
+    margin-bottom: 10px; /* 아래쪽 여백 */
+}
+
+
+
+/* 기존 스타일 유지 또는 필요에 따라 조정 */
+.tips h3 {
+    font-size: 18px;
+}
+
+
+.tip-link img{
+    width: 50px;
+    height: 50px;
+}

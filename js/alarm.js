@@ -137,3 +137,40 @@ function parseTime(timeStr) {
 
     return date;
 }
+
+//상단 달력
+document.addEventListener('DOMContentLoaded', () => {
+    // 요일과 날짜 span을 선택합니다.
+    const daySpans = document.querySelectorAll('.calendar-days span');
+    const dateSpans = document.querySelectorAll('.calendar-dates span');
+
+    // 클래스 토글 함수
+    function syncSelection(index, isDayClicked) {
+        // 모든 기존 선택된 클래스를 제거
+        daySpans.forEach(day => day.classList.remove('selected-day'));
+        dateSpans.forEach(date => date.classList.remove('selected-date'));
+
+        // 클릭된 요소와 연동된 요소에 클래스 추가
+        if (isDayClicked) {
+            daySpans[index].classList.add('selected-day');
+            dateSpans[index].classList.add('selected-date');
+        } else {
+            dateSpans[index].classList.add('selected-date');
+            daySpans[index].classList.add('selected-day');
+        }
+    }
+
+    // 요일 span 클릭 이벤트
+    daySpans.forEach((day, index) => {
+        day.addEventListener('click', () => {
+            syncSelection(index, true); // 요일 클릭 시 연동
+        });
+    });
+
+    // 날짜 span 클릭 이벤트
+    dateSpans.forEach((date, index) => {
+        date.addEventListener('click', () => {
+            syncSelection(index, false); // 날짜 클릭 시 연동
+        });
+    });
+});

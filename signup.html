@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YAKNAAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Dongle&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nuosu+SIL&family=Plaster&display=swap"
+        rel="stylesheet">
 </head>
     <style>
          /* 페이지 전체 중앙 정렬 */
@@ -14,7 +19,13 @@
             min-height: 100vh;
             margin: 0;
             flex-direction: column;
+            font-family: "Noto Sans KR", serif;
         }
+        .noto-sans-kr-uniquifier {
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
         .signup-container {
             color: #7466CE;
             font-size: 12px;
@@ -112,10 +123,19 @@
         }
 
         .items h6 {
+            padding: 0px 0px 0px 10px;
             font-size: 15px;
             color: #595959;
             margin: 0;
             margin-top: 10px;
+        }
+
+        .password h6{
+            padding: 0px;
+        }
+
+        .login-container h1{
+            color: #7466CE;
         }
     </style>
 <body>
